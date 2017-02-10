@@ -1,0 +1,22 @@
+{
+  "name": "generator-vuepackage",
+  "version": "1.0.0",
+  "description": "基于vue2.x+webpack1.x的项目目录快速生成器",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kbqncf/generator-vuepackage.git"
+  },
+  "keywords": [
+    "generator-vuepackage"
+  ],
+  "author": "gangli",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kbqncf/generator-vuepackage/issues"
+  },
+  "homepage": "https://github.com/kbqncf/generator-vuepackage#readme"
+}
