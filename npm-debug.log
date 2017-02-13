@@ -1,0 +1,108 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'publish' ]
+2 info using npm@3.10.8
+3 info using node@v6.9.0
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   escapedName: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: '/Users/gangli/generator-vuepackage',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /Users/gangli/.npm/generator-vuepackage/1.0.0/package.tgz not in flight; packing
+9 verbose correctMkdir /Users/gangli/.npm correctMkdir not in flight; initializing
+10 info lifecycle generator-vuepackage@1.0.0~prepublish: generator-vuepackage@1.0.0
+11 silly lifecycle generator-vuepackage@1.0.0~prepublish: no script for prepublish, continuing
+12 verbose tar pack [ '/Users/gangli/.npm/generator-vuepackage/1.0.0/package.tgz',
+12 verbose tar pack   '/Users/gangli/generator-vuepackage' ]
+13 verbose tarball /Users/gangli/.npm/generator-vuepackage/1.0.0/package.tgz
+14 verbose folder /Users/gangli/generator-vuepackage
+15 verbose addLocalTarball adding from inside cache /Users/gangli/.npm/generator-vuepackage/1.0.0/package.tgz
+16 verbose correctMkdir /Users/gangli/.npm correctMkdir not in flight; initializing
+17 silly cache afterAdd generator-vuepackage@1.0.0
+18 verbose afterAdd /Users/gangli/.npm/generator-vuepackage/1.0.0/package/package.json not in flight; writing
+19 verbose correctMkdir /Users/gangli/.npm correctMkdir not in flight; initializing
+20 verbose afterAdd /Users/gangli/.npm/generator-vuepackage/1.0.0/package/package.json written
+21 silly publish { name: 'generator-vuepackage',
+21 silly publish   version: '1.0.0',
+21 silly publish   description: '基于vue2.x+webpack1.x的项目目录快速生成器',
+21 silly publish   main: 'index.js',
+21 silly publish   scripts: { test: 'echo "Error: no test specified" && exit 1' },
+21 silly publish   repository:
+21 silly publish    { type: 'git',
+21 silly publish      url: 'git+https://github.com/kbqncf/generator-vuepackage.git' },
+21 silly publish   keywords: [ 'yeoman-generator', 'generator-vuepackage' ],
+21 silly publish   author: { name: 'gangli' },
+21 silly publish   license: 'ISC',
+21 silly publish   bugs: { url: 'https://github.com/kbqncf/generator-vuepackage/issues' },
+21 silly publish   homepage: 'https://github.com/kbqncf/generator-vuepackage#readme',
+21 silly publish   dependencies:
+21 silly publish    { chai: '^3.3.0',
+21 silly publish      chalk: '^1.1.1',
+21 silly publish      'fs-extra': '^0.24.0',
+21 silly publish      mocha: '^2.3.3',
+21 silly publish      'yeoman-generator': '^0.24.1',
+21 silly publish      yosay: '^1.0.5' },
+21 silly publish   readme: '# generator-vuepackage\n\n基于vue2.x+webpack1.x的项目目录快速生成器\n\n##how to use\n\nnpm install\n\n',
+21 silly publish   readmeFilename: 'README.md',
+21 silly publish   gitHead: 'aa6d971ab12bd150d39479fc8c44934163360039',
+21 silly publish   _id: 'generator-vuepackage@1.0.0',
+21 silly publish   _shasum: 'fc65e30f09a567168ebbea4d0495fb0166bf3156',
+21 silly publish   _from: '.' }
+22 verbose getPublishConfig undefined
+23 silly mapToRegistry name generator-vuepackage
+24 silly mapToRegistry using default registry
+25 silly mapToRegistry registry http://registry.cnpmjs.org/
+26 silly mapToRegistry data Result {
+26 silly mapToRegistry   raw: 'generator-vuepackage',
+26 silly mapToRegistry   scope: null,
+26 silly mapToRegistry   escapedName: 'generator-vuepackage',
+26 silly mapToRegistry   name: 'generator-vuepackage',
+26 silly mapToRegistry   rawSpec: '',
+26 silly mapToRegistry   spec: 'latest',
+26 silly mapToRegistry   type: 'tag' }
+27 silly mapToRegistry uri http://registry.cnpmjs.org/generator-vuepackage
+28 verbose publish registryBase http://registry.cnpmjs.org/
+29 silly publish uploading /Users/gangli/.npm/generator-vuepackage/1.0.0/package.tgz
+30 verbose request uri http://registry.cnpmjs.org/generator-vuepackage
+31 verbose request sending authorization for write operation
+32 info attempt registry request try #1 at 11:12:14
+33 verbose request id 0c008ddbb5267b47
+34 http request PUT http://registry.cnpmjs.org/generator-vuepackage
+35 http 403 http://registry.cnpmjs.org/generator-vuepackage
+36 verbose headers { server: 'nginx/1.4.6 (Ubuntu)',
+36 verbose headers   date: 'Mon, 13 Feb 2017 03:12:15 GMT',
+36 verbose headers   'content-type': 'application/json; charset=utf-8',
+36 verbose headers   'transfer-encoding': 'chunked',
+36 verbose headers   connection: 'keep-alive',
+36 verbose headers   'x-current-requests': '1',
+36 verbose headers   'x-readtime': '22',
+36 verbose headers   'content-encoding': 'gzip' }
+37 verbose request invalidating /Users/gangli/.npm/registry.cnpmjs.org/generator-vuepackage on PUT
+38 error publish Failed PUT 403
+39 verbose stack Error: no_perms Private mode enable, only admin can publish this module: generator-vuepackage
+39 verbose stack     at makeError (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:302:12)
+39 verbose stack     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:290:14)
+39 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:216:7
+39 verbose stack     at Gunzip.onEnd (zlib.js:227:5)
+39 verbose stack     at emitNone (events.js:91:20)
+39 verbose stack     at Gunzip.emit (events.js:185:7)
+39 verbose stack     at endReadableNT (_stream_readable.js:974:12)
+39 verbose stack     at _combinedTickCallback (internal/process/next_tick.js:74:11)
+39 verbose stack     at process._tickCallback (internal/process/next_tick.js:98:9)
+40 verbose statusCode 403
+41 verbose pkgid generator-vuepackage
+42 verbose cwd /Users/gangli/generator-vuepackage
+43 error Darwin 14.4.0
+44 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "publish"
+45 error node v6.9.0
+46 error npm  v3.10.8
+47 error code E403
+48 error no_perms Private mode enable, only admin can publish this module: generator-vuepackage
+49 error If you need help, you may report this error at:
+49 error     <https://github.com/npm/npm/issues>
+50 verbose exit [ 1, true ]

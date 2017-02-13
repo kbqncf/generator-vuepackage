@@ -1,0 +1,57 @@
+@import "../function";
+@mixin ellipsis {
+  word-break: keep-all;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  overflow: hidden;
+}
+@mixin rowsEllipsis($num){
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: $num;
+  overflow: hidden;
+}
+
+@mixin LH($lh){
+  height: rem($lh);
+  line-height: rem($lh);
+}
+
+@mixin childVertically{
+  vertical-align: middle;
+  display: table-cell;
+  &,&>*{
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+
+@mixin T-vertically{
+  position: relative;
+  top:50%;
+  transform: translateY(-50%);
+}
+@mixin M-vertically($w,$h){
+  width: $w;
+  height: $h;
+  position: relative;
+  top:50%;
+  margin-top: -($h/2);
+}
+@mixin flexMiddle(){
+  display: -webkit-box;    /*容器为旧伸缩盒*/
+  -webkit-box-align: center; /*设置旧伸缩盒对齐方式*/
+  display: flex;            /*容器为伸缩盒*/
+  align-items: center;  /*纵轴方向上的对齐方式设置为居中*/
+  -webkit-box-pack: center;
+  /*新版本语法*/
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+@mixin flexVerticalMiddle(){
+  display: -webkit-box;    /*容器为旧伸缩盒*/
+  -webkit-box-align: center; /*设置旧伸缩盒对齐方式*/
+  display: flex;            /*容器为伸缩盒*/
+  align-items: center;  /*纵轴方向上的对齐方式设置为居中*/
+}
