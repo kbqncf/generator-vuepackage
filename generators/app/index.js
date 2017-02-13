@@ -77,7 +77,7 @@ var Reactpackage = yeoman.Base.extend({
         this.directory('src', 'src');    //拷贝目录
         // this.template('_package.json', 'package.json');
         this.copy('README.md', 'README.md');
-        this.copy('.npmrc', '.npmrc');
+        // this.copy('.npmrc', '.npmrc');
         this.copy('gulpfile.js', 'gulpfile.js');
         this.copy('webpack.config.babel.js', 'webpack.config.babel.js');
         //根据用户输入写入pkg信息
