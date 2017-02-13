@@ -4,5 +4,16 @@
 
 ##how to use
 
-npm install
+首先确保自己安装了yo
 
+> npm install -g yo
+
+其次全局安装generator-zylvue模块
+
+> npm install -g generator-zylvue
+
+最后在本地新建项目目录
+
+> yo zylvue
+
+thanks~
