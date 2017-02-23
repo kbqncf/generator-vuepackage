@@ -75,18 +75,12 @@ var Reactpackage = yeoman.Base.extend({
     },
     writing: function () {  //按照自己的templates目录自定义
         this.directory('src', 'src');    //拷贝目录
-        // this.template('_package.json', 'package.json');
         this.copy('README.md', 'README.md');
         // this.copy('.npmrc', '.npmrc');
         this.copy('gulpfile.js', 'gulpfile.js');
         this.copy('webpack.config.babel.js', 'webpack.config.babel.js');
         //根据用户输入写入pkg信息
-        // var pkg = this.fs.readJSON(this.templatePath('_package.json'), {});
-        // this.fs.writeJSON(this.destinationPath('package.json'), pkg);
-        // var pkgTpl = this.fs.read(this.templatePath('_package.json'));
-        // this.log(pkgTpl);
         var pkgTpl = _.template(this.fs.read(this.templatePath('_package.json')));
-        // this.log(pkg);
         this.fs.write(this.destinationPath('package.json'), pkgTpl(this.props));
     },
     generateClient: function () {
@@ -94,11 +88,6 @@ var Reactpackage = yeoman.Base.extend({
         this.sourceRoot(path.join(__dirname, 'templates'));
         this.destinationPath('./');
     },
-    // install: function() {      //安装依赖
-    //     this.installDependencies({
-    //         skipInstall: this.options['skip-install']
-    //     });
-    // },
     end: function () {
         this.log(yosay(
             '项目构建完成ヾ(=･ω･=)o'
