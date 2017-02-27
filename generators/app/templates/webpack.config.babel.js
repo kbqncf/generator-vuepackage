@@ -21,7 +21,7 @@ let glob = require('glob');
 let CommonsChunkPlugin = webpack.optimize.CommonsChunkPlugin;
 let UglifyJsPlugin = webpack.optimize.UglifyJsPlugin;
 //debug标示
-let projectConfig = require('./src/js/lib/config');
+import {CONFIG as projectConfig} from './src/js/lib/config';
 let publicPath;
 if (projectConfig.localEnv) {//如果是本地测试环境
     publicPath = '/dist/';
@@ -30,7 +30,6 @@ if (projectConfig.localEnv) {//如果是本地测试环境
 } else {//如果打包到生产环境
     publicPath = 'http://m.zhaoyl.com/activity/20170112/dist/'
 }
-
 //通过getEntry函数获取所有js脚本
 let jsEntries = getEntry('./src/js/page/**/*.js');
 // let serverHost = "192.168.31.108";

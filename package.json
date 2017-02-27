@@ -1,6 +1,6 @@
 {
   "name": "generator-zylvue",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "基于vue2.x+webpack1.x的项目目录快速生成器,适用于zyl.org",
   "main": "index.js",
   "scripts": {
